@@ -103,7 +103,7 @@
         <div
           class="loading-bar indeterminate"
           ng-style="{&#39;background-color&#39;: view.code.color1 || view.color1}"
-          style="background-color: rgb(68, 127, 182)"
+          style="background-color: rgb(20, 25, 29)"
         ></div>
       </div>
       <div class="helper"></div>
@@ -145,7 +145,7 @@
             <div
               class="event-section-title top-bar-desktop"
               ng-style="getBackgroundColor()"
-              style="float: none; background: rgb(68, 127, 182)"
+              style="float: none; background: rgb(20, 25, 29)"
               ng-show="view.code.company"
             >
               <div class="event-content-container">
@@ -154,7 +154,7 @@
                   data-test="company-name"
                   style="font-size: 16px !important"
                 >
-                  Aroma International India
+                  <img src="./logo.png" width="200px" height="60px" />
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@
               class="event-section-title"
               ng-style="getBackgroundColor()"
               id="qr-header"
-              style="background: rgb(68, 127, 182)"
+              style="background: rgb(20, 25, 29)"
             >
               <div class="event-content-container top-info-desktop">
                 <!--                        <div class="event-title" ng-show="view.code.company && !view.code.avatar" style="font-size: 16px !important;">{{ view.code.company }}</div>-->
@@ -182,13 +182,15 @@
                   data-test="headline"
                   ng-show="view.code.tagline"
                 >
-                  Importers and Exporters of Dry Fruits and Nuts
+                  Aroma International India
                 </div>
                 <div
-                  class="event-teaser mt-10 text-break dynamicTextColor ng-binding ng-hide"
+                  class="event-teaser mt-10 dynamicTextColor ng-binding ng-show"
                   data-test="teaser-paragraph"
-                  ng-show="view.code.teaser"
-                ></div>
+                  ng-show="view.code.tagline"
+                >
+                  Importers and Exporters of Dry Fruits and Nuts
+                </div>
 
                 <!-- ngIf: view.code.callToAction.label -->
               </div>
@@ -380,8 +382,8 @@
                       <div ng-show="view.code.name">
                         <h4 class="ng-binding">Aman Bansal</h4>
                         <h4>
-                          <a href="tel:+91 75067 47751" class="ng-binding"
-                            >7506747751</a
+                          <a href="tel:+917506747751" class="ng-binding"
+                            >+91 75067 47751</a
                           >
                         </h4>
                       </div>
@@ -390,16 +392,18 @@
                       <div ng-show="view.code.name">
                         <h4 class="ng-binding">Sobhit Agarwal</h4>
                         <h4>
-                          <a href="tel:+91 98970 41288" class="ng-binding"
-                            >9897041288</a
+                          <a href="tel:+919897041288" class="ng-binding"
+                            >+91 98970 41288</a
                           >
                         </h4>
                       </div>
                     </div>
                   </div>
-
+                  <br />
+                  <br />
                   <div ng-show="view.code.email">
                     <h4>
+                      <small class="mb-30">Email us at:</small>
                       <a
                         href="mailto:aromainternational42@gmail.com"
                         target="_blank"
@@ -407,7 +411,6 @@
                         >aromainternational42@gmail.com</a
                       >
                     </h4>
-                    <small class="mb-30">Email</small>
                   </div>
 
                   <div ng-show="view.code.website" class="ng-hide">
@@ -709,7 +712,7 @@
               <div
                 class="event-section-title"
                 ng-style="getBackgroundColor();"
-                style="background: rgb(68, 127, 182)"
+                style="background: rgb(20, 25, 29)"
               >
                 <div class="event-content-container">
                   <a
